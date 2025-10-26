@@ -22,9 +22,9 @@
           },
           {
             "group": "Features",
-            "dropdowns": [
+            "pages": [
               {
-                "dropdown": "Token Creation",
+                "group": "Token Creation",
                 "icon": "coins",
                 "pages": [
                   "tools/token-creation/overview",
@@ -32,7 +32,7 @@
                 ]
               },
               {
-                "dropdown": "Multisender",
+                "group": "Multisender",
                 "icon": "paper-plane",
                 "pages": [
                   "tools/multisender/overview",
