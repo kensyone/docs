@@ -1,13 +1,14 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "aspen",
   "name": "Tokify",
+  "description": "Tokify simplifies token creation and management. Create tokens, lock liquidity, set vesting, send airdrops, and run staking pools in one place. No code, no hassle. Built for Web3 builders.",
   "colors": {
     "primary": "#159DFF",
     "light": "#4AB8FF",
     "dark": "#0F6EB2"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.png",
   "navigation": {
     "tabs": [
       {
@@ -16,18 +17,28 @@
           {
             "group": "Get Started",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "index"
             ]
           },
           {
             "group": "Features",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              {
+                "dropdown": "Token Creation",
+                "icon": "coins",
+                "pages": [
+                  "tools/token-creation/overview",
+                  "tools/token-creation/faq"
+                ]
+              },
+              {
+                "dropdown": "Multisender",
+                "icon": "paper-plane",
+                "pages": [
+                  "tools/multisender/overview",
+                  "tools/multisender/faq"
+                ]
+              }
             ]
           },
           {

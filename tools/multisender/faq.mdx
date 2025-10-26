@@ -1,0 +1,65 @@
+---
+title: 'Multisender FAQs'
+description: 'Frequently asked questions regarding the Tokify Multisender'
+---
+
+## Frequently Asked Questions
+
+<AccordionGroup>
+  <Accordion title="What is the Tokify Multisender tool?">
+    Tokify Multisender is a powerful tool that allows you to send tokens or NFTs to multiple addresses in a single transaction. It supports native blockchain tokens, ERC20 tokens, and ERC721 NFTs across supported networks.
+  </Accordion>
+
+  <Accordion title="Do I need coding skills to use the Multisender?">
+    No coding is required. The interface provides an intuitive form where you can select your asset type, input recipient addresses and amounts, and execute the transaction with one click.
+  </Accordion>
+
+  <Accordion title="How do I format the recipient list?">
+    Each line should contain one recipient in the format:
+
+    ```
+    address amount
+    ```
+
+    Addresses and amounts can be separated by spaces, commas, equals signs, semicolons, dashes, or colons. Examples:
+
+    ```
+    0x1234...abcd 100
+    0x5678...efgh,50
+    0x9abc...ijkl=25
+    ```
+  </Accordion>
+
+  <Accordion title="Can I send different amounts to different recipients?">
+    Yes! Each recipient can receive a different amount. Just specify the amount for each address on separate lines.
+  </Accordion>
+
+  <Accordion title="Is there a limit to how many recipients I can add?">
+    There is no strict limit on the number of recipients.
+  </Accordion>
+
+  <Accordion title="Can I upload a CSV file instead of typing addresses?">
+    Yes! Click "Or, Upload CSV" to import a CSV file. The file should have one recipient per line with address and amount.
+  </Accordion>
+
+  <Accordion title="Why do I need to approve ERC20 tokens?">
+    The multisender contract needs permission to transfer your tokens on your behalf. The approval process grants this permission for the exact amount you're sending.
+  </Accordion>
+
+  <Accordion title="Why do I need to approve NFTs?">
+    For ERC721 NFTs, you need to approve the multisender contract to transfer specific token IDs from your wallet.
+  </Accordion>
+
+  <Accordion title="How long does a multisend transaction take?">
+    Transactions typically complete instantly, depending on network congestion.
+  </Accordion>
+
+  <Accordion title="What happens if a transaction fails?">
+    If a transaction fails:
+- No tokens are sent (transactions are atomic)
+  </Accordion>
+
+  <Accordion title="Do recipients need to do anything?">
+    No, recipients don't need to take any action. The tokens/NFTs are automatically sent to their addresses.
+  </Accordion>
+</AccordionGroup>
